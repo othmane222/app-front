@@ -39,6 +39,7 @@ const ComplexSearch = () => {
           setCourses(data);
         } catch (error) {
           console.error('Error fetching courses', error);
+          console.log(`Complex search Courses: ${courses} `)
         }
       };
 
@@ -416,7 +417,7 @@ const ComplexSearch = () => {
             <div id={"recommendation"} className="container my-20 ">
                 <div>
                     <h1 className={"text-xl font-bold"}>
-                        Recommanded courses for you!
+                        Recommended courses for you!
                     </h1>
                 </div>
                 <Carousel
